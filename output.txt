@@ -1,0 +1,73 @@
+=============================================================
+    COIS 3320 Project: Lock-Free Queue Implementation
+=============================================================
+
+--- CORRECTNESS TESTS ---
+Test 1: Empty queue dequeue... PASS
+Test 2: Single enqueue/dequeue... PASS
+Test 3: FIFO order (10 items)... PASS
+Test 4: Bulk enqueue/dequeue (100 items)... PASS
+Test 5: Alternating operations... PASS
+Test 6: Concurrent producers (4 threads, 25 items each)... PASS
+Test 7: Concurrent consumers (4 threads, 100 items)... PASS
+Test 8: Mixed producers/consumers (8 threads)... PASS (Enq:4018 Deq:3936 Size:82 Expected:82)
+Test 9: Stress test (10000 items)... PASS
+Test 10: Lock-based queue (100 items)... PASS
+
+--- TEST SUMMARY ---
+Tests Passed: 10/10
+
+--- PERFORMANCE BENCHMARKS ---
+Operations per thread: 50000
+Threads  | Lock-Based (s)  | Lock-Free (s)   | Speedup   
+-------------------------------------------------------------
+1        | 0.0026          | 0.0039          | 0.66x
+2        | 0.0156          | 0.0117          | 1.34x
+4        | 0.0495          | 0.0231          | 2.15x
+8        | 0.0843          | 0.0463          | 1.82x
+16       | 0.1814          | 0.0938          | 1.93x
+32       | 0.4046          | 0.1931          | 2.10x
+
+=============================================================
+--- BONUS: ADDITIONAL TEST CASES (190+) ---
+=============================================================
+
+[Test Set 1] FIFO with varying sizes (10 to 1000)...
+   Result: 100/100 PASS
+
+[Test Set 2] Empty dequeue tests (10 tests)...
+   Result: 10/10 PASS
+
+[Test Set 3] Single item enqueue/dequeue (10 tests)...
+   Result: 10/10 PASS
+
+[Test Set 4] Alternating operations (20 tests)...
+   Result: 20/20 PASS
+
+[Test Set 5] Boundary value tests (10 tests)...
+   Result: 10/10 PASS
+
+[Test Set 6] Rapid operation tests (10 tests)...
+   Result: 10/10 PASS
+
+[Test Set 7] Bulk operations with various sizes (15 tests)...
+   Result: 15/15 PASS
+
+[Test Set 8] Interleaved enqueue/dequeue patterns (10 tests)...
+   Result: 10/10 PASS
+
+[Test Set 9] Negative value stress tests (5 tests)...
+   Result: 5/5 PASS
+
+[Test Set 10] Sequential access patterns (10 tests)...
+   Result: 10/10 PASS
+
+=============================================================
+--- FINAL TEST SUMMARY ---
+=============================================================
+Core Correctness Tests: 10/10 PASS
+Performance Benchmarks: 6 thread configurations tested
+Bonus Test Cases: 200/200 PASS (100.0%)
+
+Total Test Cases: 210 PASS
+=============================================================
