@@ -559,10 +559,7 @@ Safe memory reclamation is one of the most challenging aspects of lock-free prog
 Lock-free-Implementation/
 ├── Project3.c                    # Full implementation with tests and benchmarks
 ├── README.md                     # This file
-├── Project3_AshishAggrawal.pdf  # Detailed project report
-└── images/                       # Performance graphs and screenshots
-    ├── execution-time-graph.png
-    └── speedup-graph.png
+├── output.txt                    # Detailed project Output
 ```
 
 ---
