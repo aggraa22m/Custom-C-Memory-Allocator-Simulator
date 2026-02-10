@@ -317,7 +317,8 @@ Performance benchmarks were conducted with the following configuration:
 
 ### Execution Time Comparison
 
-![Execution Time Graph](images/execution-time-graph.png)
+![Execution Time Graph] <img width="577" height="492" alt="image" src="https://github.com/user-attachments/assets/f4b70f69-aa79-49a6-a7c5-ca988d66ef1b" />
+
 *Figure 1: Execution time comparison showing lock-based (red) vs lock-free (blue) performance across thread counts*
 
 #### Key Observations:
@@ -336,7 +337,8 @@ Performance benchmarks were conducted with the following configuration:
 
 ### Speedup Analysis
 
-![Speedup Graph](images/speedup-graph.png)
+![Speedup Graph] <img width="597" height="502" alt="image" src="https://github.com/user-attachments/assets/aecdcd6f-0327-47b4-8665-11a0d07d83d3" />
+
 *Figure 2: Speedup factor of lock-free over lock-based implementation*
 
 The speedup factor is calculated as: **Time_Locked / Time_LockFree**
