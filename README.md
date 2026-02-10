@@ -1,8 +1,5 @@
 # Lock-Free Queue Implementation with Comprehensive Testing
 
-**Author:** Ashish Aggrawal (0826524)  
-**Course:** COIS 3320 - Fundamentals of Operating Systems
-
 A high-performance concurrent queue implementation demonstrating the **Michael-Scott lock-free algorithm** using C11 atomics, validated through 210 comprehensive test cases and benchmarked against a traditional mutex-based baseline.
 
 ---
